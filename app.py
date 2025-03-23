@@ -4,7 +4,7 @@ import librosa
 import joblib
 
 app = Flask(__name__)
-
+app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024  # Allow 50MB uploads
 # Load trained models and scaler
 knn = joblib.load("knn_model.pkl")
 encoder = joblib.load("label_encoder.pkl")
