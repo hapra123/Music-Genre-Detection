@@ -6,7 +6,7 @@ import joblib
 app = Flask(__name__)
 
 # Load trained models and scaler
-knn = joblib.load("knn_model.pkl")
+knn = joblib.load("calibrated_svc_model.pkl")
 encoder = joblib.load("label_encoder.pkl")
 scaler = joblib.load("scaler.pkl")
 

@@ -6,7 +6,7 @@ import joblib
 from lazypredict.Supervised import LazyClassifier  # Import LazyPredict
 
 DATA_CSV = "data.csv"
-MODEL_FILE = "knn_model.pkl"
+#MODEL_FILE = "knn_model.pkl"
 
 # Load dataset
 df = pd.read_csv(DATA_CSV)

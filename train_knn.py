@@ -6,7 +6,7 @@ from sklearn.neighbors import KNeighborsClassifier
 import joblib
 
 DATA_CSV = "data.csv"
-MODEL_FILE = "knn_model.pkl"
+#MODEL_FILE = "knn_model.pkl"
 
 df = pd.read_csv(DATA_CSV)
 X = df.iloc[:, :-1].values
