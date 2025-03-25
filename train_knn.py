@@ -27,10 +27,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 knn = KNeighborsClassifier(n_neighbors=5)
 knn.fit(X_train, y_train)
 
-# Save model and encoders
-joblib.dump(knn, MODEL_FILE)
-joblib.dump(encoder, "label_encoder.pkl")
-joblib.dump(scaler, "scaler.pkl")
 
 # Test accuracy
 accuracy = knn.score(X_test, y_test)
